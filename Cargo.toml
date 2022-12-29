@@ -1,0 +1,15 @@
+[package]
+name = "rand_bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+criterion = "0.4.0"
+rand = "0.8.5"
+
+[[bench]]
+name = "first"
+harness = false
+
+[profile.release]
+lto = "on"
